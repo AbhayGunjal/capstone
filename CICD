@@ -1,0 +1,36 @@
+GitHub Actions workflow: Lint
+Run: 36141088783
+Commit: 43991c8635a7af01b4c2a4ce0341128d...
+Run URL: https://github.com/AbhayGunjal/capstone/actions/runs/36141088783
+
+Job: Lint Python Files
+Job ID: 108090825062
+Duration: 8s
+Status: success
+
+Set up job ................................ success
+Run actions/checkout@v4 .................. success
+Run actions/setup-python@v5 .............. success
+Run Install flake8 ........................ success
+Run flake8 ................................. success
+  python -m flake8 server sentiment_analyzer --exclude=__pycache__ --ignore=E501,W503,F401,F841
+Post Set up Python ........................ success
+Post Checkout repository .................. success
+Complete job .............................. success
+
+Job: Lint JavaScript Files
+Job ID: 108090825367
+Duration: 12s
+Status: success
+
+Set up job ................................ success
+Run actions/checkout@v4 .................. success
+Run actions/setup-node@v4 ................. success
+Run Install JSHint ....................... success
+Run JSHint ................................ success
+  jshint --config .jshintrc database/server.js database/review.js database/dealership.js
+Post Set up Node.js ...................... success
+Post Checkout repository .................. success
+Complete job .............................. success
+
+Workflow completed successfully.
