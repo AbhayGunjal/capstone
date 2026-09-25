@@ -1,0 +1,26 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Alex Johnson",
+      "dealership": 1,
+      "review": "Fantastic services and a very friendly sales team.",
+      "purchase": true,
+      "purchase_date": "2025-03-10",
+      "car_make": "Toyota",
+      "car_model": "Camry",
+      "car_year": 2024
+    },
+    {
+      "id": 2,
+      "name": "Maria Gomez",
+      "dealership": 2,
+      "review": "Quick and easy process, would recommend to friends.",
+      "purchase": true,
+      "purchase_date": "2025-05-22",
+      "car_make": "Honda",
+      "car_model": "Civic",
+      "car_year": 2023
+    }
+  ]
+}

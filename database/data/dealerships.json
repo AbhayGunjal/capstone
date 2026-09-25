@@ -1,0 +1,40 @@
+{
+  "dealerships": [
+    {
+      "id": 1,
+      "city": "Dallas",
+      "state": "Texas",
+      "st": "TX",
+      "address": "1200 Market Street",
+      "zip": "75201",
+      "lat": 32.78,
+      "long": -96.80,
+      "short_name": "Dallas Motors",
+      "full_name": "Cars Dealership - Dallas Motors"
+    },
+    {
+      "id": 2,
+      "city": "Wichita",
+      "state": "Kansas",
+      "st": "KS",
+      "address": "455 N Main St",
+      "zip": "67202",
+      "lat": 37.69,
+      "long": -97.34,
+      "short_name": "Wichita Auto",
+      "full_name": "Cars Dealership - Wichita Auto"
+    },
+    {
+      "id": 3,
+      "city": "Denver",
+      "state": "Colorado",
+      "st": "CO",
+      "address": "88 Larimer St",
+      "zip": "80202",
+      "lat": 39.74,
+      "long": -104.99,
+      "short_name": "Rocky Mountain Cars",
+      "full_name": "Cars Dealership - Rocky Mountain Cars"
+    }
+  ]
+}
