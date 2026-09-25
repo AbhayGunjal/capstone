@@ -46,10 +46,10 @@ const Register = () => {
           )}
 
           <div className="input_field">
-            <span>Username </span>
             <input
               type="text"
               name="userName"
+              placeholder="Username"
               value={userName}
               onChange={(e) => setUserName(e.target.value)}
               required
@@ -57,10 +57,10 @@ const Register = () => {
           </div>
 
           <div className="input_field">
-            <span>First Name </span>
             <input
               type="text"
               name="firstName"
+              placeholder="First Name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               required
@@ -68,10 +68,10 @@ const Register = () => {
           </div>
 
           <div className="input_field">
-            <span>Last Name </span>
             <input
               type="text"
               name="lastName"
+              placeholder="Last Name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               required
@@ -79,10 +79,10 @@ const Register = () => {
           </div>
 
           <div className="input_field">
-            <span>Email </span>
             <input
               type="email"
               name="email"
+              placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -90,10 +90,10 @@ const Register = () => {
           </div>
 
           <div className="input_field">
-            <span>Password </span>
             <input
               type="password"
               name="password"
+              placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
