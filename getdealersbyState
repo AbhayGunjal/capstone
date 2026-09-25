@@ -1,0 +1,9 @@
+curl -X GET http://localhost:3030/fetchDealers/Kansas
+
+[
+	{"_id":"000000000000000000000002","id":2,"city":"Wichita","state":"Kansas","st":"KS","address":"455 N Main St","zip":"67202","lat":37.69,"long":-97.34,"short_name":"Wichita Auto","full_name":"Cars Dealership - Wichita Auto"},
+	{"_id":"000000000000000000000008","id":8,"city":"Topeka","state":"Kansas","st":"KS","address":"2120 Wanamaker Road","zip":"66614","lat":39.01,"long":-95.76,"short_name":"Topeka Motors","full_name":"Cars Dealership - Topeka Motors"},
+	{"_id":"000000000000000000000009","id":9,"city":"Overland Park","state":"Kansas","st":"KS","address":"6800 West 119th Street","zip":"66209","lat":38.91,"long":-94.68,"short_name":"Prairie Auto","full_name":"Cars Dealership - Prairie Auto"},
+	{"_id":"00000000000000000000000a","id":10,"city":"Lawrence","state":"Kansas","st":"KS","address":"1400 Iowa Street","zip":"66044","lat":38.96,"long":-95.25,"short_name":"Jayhawk Cars","full_name":"Cars Dealership - Jayhawk Cars"},
+	{"_id":"00000000000000000000000b","id":11,"city":"Manhattan","state":"Kansas","st":"KS","address":"101 Bluemont Avenue","zip":"66502","lat":39.18,"long":-96.57,"short_name":"Flint Hills Motors","full_name":"Cars Dealership - Flint Hills Motors"}
+]
