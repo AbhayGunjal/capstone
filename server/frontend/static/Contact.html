@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us | Cars Dealership</title>
+  <link rel="stylesheet" href="/static/Static.css" />
+  <link rel="stylesheet" href="/static/Contact.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Cars Dealership</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Reach out using the details below or send us a message.</p>
+
+    <div class="contact-grid">
+      <div class="contact-details">
+        <h2>Head Office</h2>
+        <p><strong>Address:</strong> 1200 Market Street, Suite 400, Dallas, TX 75201</p>
+        <p><strong>Phone:</strong> +1 (800) 555-0198</p>
+        <p><strong>Email:</strong> support@carsdealership.com</p>
+        <p><strong>Hours:</strong> Mon–Fri, 9:00 AM – 6:00 PM CST</p>
+
+        <h2>Follow Us</h2>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Cars Dealership. All rights reserved.</p>
+  </footer>
+</body>
+</html>
