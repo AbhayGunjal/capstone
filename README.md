@@ -1,39 +1,22 @@
-# Cars Dealership — Full Stack Development Capstone Project
+# xrwvm-fullstack_developer_capstone
 
-A responsive full-stack web application for a national car dealership chain.
-Customers can browse dealership branches across the U.S., view existing
-reviews (with sentiment analysis), and submit their own reviews after
-registering and logging in.
+## Project Name: fullstack_developer_capstone
+
+A responsive full-stack web application for Cars Dealership, a national car
+retailer in the U.S. Customers can browse dealership branches, filter by
+state, read reviews with sentiment analysis, register, log in, and submit
+their own reviews.
+
+**Repository name:** xrwvm-fullstack_developer_capstone
+**Project name:** fullstack_developer_capstone
 
 ## Tech Stack
 
 - **Frontend:** React
 - **Backend:** Django (server rendering + REST API), Node.js/Express
 - **Database:** MongoDB (dealers & reviews), SQLite (Django users/car data)
-- **Sentiment Analysis:** Flask microservice using TextBlob
+- **Sentiment Analysis:** Flask microservice
 - **DevOps:** Docker, Kubernetes, GitHub Actions (CI/CD), IBM Cloud Code Engine
-
-## Project Structure
-
-```
-.
-├── server/                # Django project + built React frontend
-│   ├── djangoapp/         # Django app: models, views, urls, restapis
-│   └── frontend/          # React source + static assets
-├── database/               # Node/Express + MongoDB microservice
-├── sentiment_analyzer/     # Flask sentiment analysis microservice
-└── .github/workflows/      # CI/CD pipeline
-```
-
-## Features
-
-- Dealer listing and filtering by state
-- Dealer detail pages with customer reviews and sentiment tags
-- User registration, login, and logout
-- Review submission for authenticated users
-- Django admin panel for managing car makes/models
-- Automated tests run via GitHub Actions on every push
-- Containerized and deployed to IBM Cloud Code Engine
 
 ## Running Locally
 
@@ -45,12 +28,12 @@ python manage.py migrate
 python manage.py runserver
 
 # Dealer/review microservice
-cd database
+cd server/database
 npm install
 node server.js
 
 # Sentiment analysis microservice
-cd sentiment_analyzer
+cd server/djangoapp/microservices
 pip install -r requirements.txt
 python app.py
 ```
