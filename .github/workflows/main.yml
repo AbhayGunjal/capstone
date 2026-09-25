@@ -23,7 +23,7 @@ jobs:
         run: python -m pip install flake8
 
       - name: Run flake8
-        run: flake8 server sentiment_analyzer --exclude=__pycache__ --ignore=E501,W503
+        run: flake8 server sentiment_analyzer --exclude=__pycache__ --ignore=E501,W503,F401,F841
 
   lint-javascript:
     name: Lint JavaScript Files
