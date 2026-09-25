@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dealer Homepage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f7fb;
+        color: #222;
+      }
+      .topbar {
+        background: #123b6b;
+        color: white;
+        padding: 16px 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .brand { font-size: 22px; font-weight: bold; }
+      .user-pill {
+        background: rgba(255,255,255,0.15);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-weight: bold;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 28px auto;
+        padding: 0 20px;
+      }
+      .login-box {
+        background: white;
+        width: 360px;
+        margin: 20px auto 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+        padding: 20px;
+      }
+      .login-box h3 {
+        margin-top: 0;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 8px 0 12px 0;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #d0d7e2;
+      }
+      button {
+        background: #1e7bd6;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+      .hidden { display: none; }
+      .dealers-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+      }
+      .dealer-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+        padding: 18px;
+      }
+      .dealer-name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .dealer-meta {
+        color: #4b5563;
+        line-height: 1.6;
+      }
+      .review-btn {
+        margin-top: 14px;
+        background: #0d8a5d;
+      }
+      .status {
+        margin-top: 0;
+        color: #1f3f5e;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="brand">Cars Dealership</div>
+      <div class="user-pill" id="userPill">Not logged in</div>
+    </div>
+
+    <div class="container">
+      <div id="loginForm" class="login-box">
+        <h3>Login</h3>
+        <label>Username</label>
+        <input id="username" type="text" value="Abhishek" />
+        <label>Password</label>
+        <input id="password" type="password" value="Admin@1234" />
+        <button id="loginBtn">Log In</button>
+      </div>
+
+      <div id="dealerView" class="hidden">
+        <p class="status">Logged in as <span id="welcomeUser">Abhishek</span></p>
+        <div class="dealers-grid">
+          <div class="dealer-card">
+            <div class="dealer-name">Dallas Motors</div>
+            <div class="dealer-meta">
+              Dallas, Texas<br />
+              1200 Market Street<br />
+              TX 75201
+            </div>
+            <button class="review-btn">Review Dealer</button>
+          </div>
+          <div class="dealer-card">
+            <div class="dealer-name">Wichita Auto</div>
+            <div class="dealer-meta">
+              Wichita, Kansas<br />
+              455 N Main St<br />
+              KS 67202
+            </div>
+            <button class="review-btn">Review Dealer</button>
+          </div>
+          <div class="dealer-card">
+            <div class="dealer-name">Rocky Mountain Cars</div>
+            <div class="dealer-meta">
+              Denver, Colorado<br />
+              88 Larimer St<br />
+              CO 80202
+            </div>
+            <button class="review-btn">Review Dealer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginForm = document.getElementById('loginForm');
+      const dealerView = document.getElementById('dealerView');
+      const userPill = document.getElementById('userPill');
+      const welcomeUser = document.getElementById('welcomeUser');
+
+      document.getElementById('loginBtn').addEventListener('click', () => {
+        const username = document.getElementById('username').value || 'Abhishek';
+        loginForm.classList.add('hidden');
+        dealerView.classList.remove('hidden');
+        userPill.textContent = 'Logged in: ' + username;
+        welcomeUser.textContent = username;
+      });
+    </script>
+  </body>
+</html>

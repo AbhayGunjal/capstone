@@ -1,0 +1,10 @@
+curl.exe -v -X POST http://localhost:8000/djangoapp/login -H "Content-Type: application/json" -d '{"userName": "testuser", "password": "testpass123"}'
+
+# Example output:
+# > POST /djangoapp/login HTTP/1.1
+# > Host: localhost:8000
+# > Content-Type: application/json
+# > Content-Length: 43
+# < HTTP/1.1 200 OK
+# < Content-Type: application/json
+# {"userName": "testuser", "status": "Authenticated"}
